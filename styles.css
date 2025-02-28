@@ -1,0 +1,37 @@
+.header{
+    background-color: #bde0fe;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-size: xx-large;
+}
+body{
+    background-color: #f1ead8;
+}
+.elements{
+    float: left;
+}
+img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border: 5px solid black; /* Borde rojo de 5px */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.sites{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Allows items to wrap */
+    gap: 10px;
+}
+p{
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    font-size: x-large;
+}
