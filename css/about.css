@@ -8,7 +8,6 @@ body {
 }
 @font-face {
     font-family: "MyFont";
-    src: url("fonts/04B_30__.TTF") format("truetype");
     src: url("/fonts/04B_30__.TTF") format("truetype");
 }
 
