@@ -1,0 +1,42 @@
+@import url('projectsInfo.css');
+body{
+    background-image: url("../img/soloBg.png");
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0;
+}
+.header{
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+.options {
+    position: absolute; 
+    top: 25%;
+    right: 10%;
+    display: flex;
+    gap: 100px;
+
+}
+.phone {
+    width: 300px; 
+}
+
+.phone img {
+    max-width: 100%;  
+}
+.phoneTitle {
+    position: absolute;
+    top: 30%; 
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-family: "Jersey 10", sans-serif;
+}
+a{
+    color: black;
+}

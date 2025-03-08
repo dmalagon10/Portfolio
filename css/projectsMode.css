@@ -1,0 +1,69 @@
+body{
+    background: linear-gradient(to left, #85d2f3, #f989fc) no-repeat; 
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.parallelogram {
+    display: flex; 
+}
+
+.parallelogram1, .parallelogram2 {
+    width: 100vh;
+    height: 100vh;
+    transform: skew(-20deg);
+}
+
+.parallelogram1 {
+    background: #f989fc;
+    margin-left: 15px;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.parallelogram2 {
+    background: #85d2f3;
+}
+.project{
+    max-width: 70%; 
+    position: fixed;
+    left: 110px;
+    top: 20%;
+}
+.solo{
+    top: 10%;
+    z-index: 2;
+}
+.title{
+    top: 50%;
+    z-index: 2;
+}
+.title2{
+    top: 61%;
+    left: 190px;
+}
+.parallelogram1 img, .parallelogram2 img{
+    transform: skew(20deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.parallelogram1:hover img, .parallelogram2:hover img {
+    transform: skew(20deg) scale(1.15);
+}
+.container{
+    position:absolute;
+    left: 90px;
+    bottom: 0px;
+    transform: skew(20deg);
+}
+.button{
+    background-color:#85d2f3
+}
+.button:hover {
+    background-color: #6bb9e6;
+}
