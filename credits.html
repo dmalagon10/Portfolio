@@ -1,3 +1,5 @@
+<!--Name: Daniela Malagon Fonseca-->
+<!--Student Number: 666551486-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <title>Credits</title>
+    <!--Styles-->
     <style>
+        /*background*/
         body{
             background-color: black;
             background-size: contain;     
@@ -18,6 +22,7 @@
             justify-content: center;
             overflow: hidden;
         }
+        /*image rotating in circles*/
         .rotating-bg {
             position: absolute;
             width: 150vw;
@@ -29,6 +34,7 @@
             animation: rotate360 10s linear infinite;
             background-size: 50%
         }
+        /*Credits information*/
         .credits{
             top: 46%;
             left: 50%;
@@ -43,8 +49,7 @@
             text-align: center;
             color: white;
         }
-
-        
+        /*rotation animation*/
         @keyframes rotate360 {
             from {
                 transform: rotate(0deg);
@@ -53,11 +58,13 @@
                 transform: rotate(360deg);
             }
         }
-    
     </style>
 </head>
 <body>
+    <!--Rotating background-->
     <div class="rotating-bg"></div>
+
+    <!--Info-->
     <div class="credits">
         <div style="font-size: 23px;">Credits</div>
         All graphic elements are inspired by the album <em>Get Up</em> by NewJeans (2023) and The Powerpuff Girls (1998).

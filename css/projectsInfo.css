@@ -1,5 +1,8 @@
+/*import animations*/
 @import url('mainpage.css');
 @import url('about.css');
+
+/*background*/
 body{
     background-image: url("../img/groupBg.png");
     background-size: cover;
@@ -8,11 +11,12 @@ body{
     height: 100vh; 
     margin: 0;
 }
+
+/*button to change project mode*/
 .solo-link img {
     width: 150px; 
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
-
 .solo-link{
     position: relative;
     float: right;
@@ -24,10 +28,12 @@ body{
     margin:0;
 }
 
+/*hover efect for the button*/
 .solo-link:hover{
     animation: zoomInOut 1.9s infinite alternate;
 }
 
+/*phone style*/
 .phone{
     position: relative;
     width: 300px;
@@ -35,10 +41,12 @@ body{
     left: 20px;
 }
 
+/*vibration for hover*/
 .phone:hover {
     animation: vibrate 0.2s infinite linear; 
 }
 
+/*vibration animation*/
 @keyframes vibrate {
     0% { transform: translate(0); }
     25% { transform: translate(-2px, 2px); }
@@ -46,6 +54,8 @@ body{
     75% { transform: translate(-2px, -2px); }
     100% { transform: translate(2px, 2px); }
 }
+
+/*nintendo image*/
 .nintendo {
     position: absolute; 
     top: 5%;
@@ -53,6 +63,7 @@ body{
     animation: jump 2s ease-in-out infinite;
 }
 
+/*info in the nintendo (first part)*/
 .text {
     font-family: "Jersey 10", sans-serif;
     width: 240px;
@@ -61,6 +72,7 @@ body{
     margin-right: 370px;  
 }
 
+/*info in the nintendo (second part)*/
 .lastItems{
     width: 230px;
     transform: skew(-10deg);
@@ -68,11 +80,14 @@ body{
     margin-left: 35px;  
     font-size: 18px;
 }
+/*bullet points*/
 ul{
     list-style-position: inside; 
     padding-left: 0; 
     margin-left: 11px; 
 }
+
+/*Project title*/
 p{
     font-weight: bold;
     font-size: 20px;

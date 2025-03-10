@@ -1,4 +1,7 @@
+/*importing animations from projectsInfo*/
 @import url('projectsInfo.css');
+
+/*background*/
 body{
     background-image: url("../img/soloBg.png");
     background-size: cover;
@@ -7,6 +10,8 @@ body{
     height: 100vh; 
     margin: 0;
 }
+
+/*title styles*/
 .header{
     position: absolute;
     top: 10%; 
@@ -14,6 +19,8 @@ body{
     transform: translateX(-50%);
     width: max-content;
 }
+
+/*phones positioning and size*/
 .options {
     position: absolute; 
     top: 25%;
@@ -22,13 +29,15 @@ body{
     gap: 100px;
 
 }
-.phone {
+/*.phone {
     width: 300px; 
-}
+}*/
 
 .phone img {
     max-width: 100%;  
 }
+
+/*Project title inside the phone*/
 .phoneTitle {
     position: absolute;
     top: 30%; 
