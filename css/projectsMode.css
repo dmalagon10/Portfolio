@@ -32,6 +32,7 @@ body{
 .parallelogram2 {
     background: #85d2f3;
 }
+/*project images styles*/
 .project{
     max-width: 70%; 
     position: fixed;
@@ -42,6 +43,8 @@ body{
     top: 10%;
     z-index: 2;
 }
+
+/*title images*/
 .title{
     top: 50%;
     z-index: 2;
@@ -50,14 +53,19 @@ body{
     top: 61%;
     left: 190px;
 }
+
+/*avoid images leaning to the paralelogram shape*/
 .parallelogram1 img, .parallelogram2 img{
     transform: skew(20deg);
     transition: transform 0.3s ease-in-out;
 }
 
+/*zoom of the hover*/
 .parallelogram1:hover img, .parallelogram2:hover img {
     transform: skew(20deg) scale(1.15);
 }
+
+/*back button styles*/
 .container{
     position:absolute;
     left: 90px;
