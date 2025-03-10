@@ -1,16 +1,28 @@
+/*background blue*/
 body{
     background-color: #85d2f3;
     overflow: hidden;
 }
+/*putting the clouds in the background with opacity and effects*/
 .cloud{
     position: absolute;
     opacity: 0.8;
     z-index: -1;
     animation: zoomInOut 2.2s infinite alternate;
 }
+/*effect of zoom*/
+@keyframes zoomInOut {
+    0% { transform: scale(1); }   
+    50% { transform: scale(1.2); } 
+    100% { transform: scale(1); }
+}
+
+/*make the zooming alternating*/
 .cloud:nth-child(even) { 
     animation-delay: 0.3s;
 }
+
+/*position of clouds and hearts*/
 .cloud1 { 
     top: 10%; 
     left: 5%; 
@@ -66,6 +78,8 @@ body{
     left: 25%; 
     width: 150px
 }
+
+/*title styles*/
 .title{
     display: flex;
     flex-direction: column;
@@ -73,20 +87,18 @@ body{
     align-items: center;
     height: 100vh;
 }
+/*add animation to the title*/
 .name {
     display: block;
     width: 300px;
     animation: zoomInOut 1.9s infinite alternate;
 }
+/*make the zooming alternating*/
 .name:nth-child(2) { 
     animation-delay: 0.3s;
 }
-@keyframes zoomInOut {
-    0% { transform: scale(1); }   
-    50% { transform: scale(1.2); } 
-    100% { transform: scale(1); }
-}
 
+/*button to start*/
 .button{
     background-color: #fe87fb;
     font-family: "Jersey 10", sans-serif;
