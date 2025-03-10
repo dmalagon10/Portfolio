@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <title>Credits</title>
+    <style>
+        body{
+            background-color: black;
+            background-size: contain;     
+            background-position: center; 
+            height: 95vh;                        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .rotating-bg {
+            position: absolute;
+            width: 150vw;
+            height: 150vh;
+            background-image: url("../img/circle.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            animation: rotate360 10s linear infinite;
+            background-size: 50%
+        }
+        .credits{
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position:absolute;
+            font-family: "Jersey 10", sans-serif;
+            font-size: 18px;
+            overflow: auto;
+            width: 290px;
+            height: 210px;
+            padding: 2px;
+            text-align: center;
+            color: white;
+        }
+
+        
+        @keyframes rotate360 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="rotating-bg"></div>
+    <div class="credits">
+        <div style="font-size: 23px;">Credits</div>
+        All graphic elements are inspired by the album <em>Get Up</em> by NewJeans (2023) and The Powerpuff Girls (1998).
+        <br></br>
+        Some images have also been taken from the <em>NewJeans SuperGirls</em> game by Frostmade.
+        <br></br>
+        All images have been edited by the website’s owner for design purposes.
+    </div>
+</body>
+</html>
