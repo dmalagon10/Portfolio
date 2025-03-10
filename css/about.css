@@ -26,14 +26,14 @@ body {
     50% { transform: translateY(-10px); }
 }
 .info{
-    top: 43%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     position:absolute;
     font-family: "Jersey 10", sans-serif;
     font-size: 20px;
     overflow: auto;
-    width: 300px;
+    width: 270px;
     height: 210px;
     padding: 2px;
 }
