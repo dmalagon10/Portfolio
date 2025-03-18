@@ -21,7 +21,7 @@ HTML, CSS and JavaScript
 │── projectsMode.html    # Projects page  
 │── credits.html         # Credits to the graphical elements
 │── characters.html      # Characters used in the graphical elements
-│── projects/        # Individual and group projects 
+│── projects/         # Individual and group projects 
 │   │── budget/       # Budget-related project  
 │   │── groupProject/ # Group project  
 │   │── lottery/      # Lottery project  
