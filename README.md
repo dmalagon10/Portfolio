@@ -33,7 +33,7 @@ HTML, CSS and JavaScript
 │── README.md        # This file  
 
 ## Installation & Usage
-Clone the repository: git clone https://github.com/your-username/portfolio.git
+Clone the repository: https://github.com/dmalagon10/Portafolio.git
 Open index.html in your browser.
 
 ## Contact
