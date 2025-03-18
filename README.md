@@ -20,13 +20,17 @@ HTML, CSS and JavaScript
 │── aboutMe.html         # About Me page  
 │── projectsMode.html    # Projects page  
 │── credits.html         # Credits to the graphical elements
+
 │── characters.html      # Characters used in the graphical elements
+
 │── projects/         # Individual and group projects 
+
 │   │── budget/       # Budget-related project  
 │   │── groupProject/ # Group project  
 │   │── lottery/      # Lottery project  
 │   │── moomoo/       # MooMoo-related project  
 │   │── soloProjects/ # Personal projects menu
+
 │── css/             # Stylesheets  
 │── animation.js     # Scripts  
 │── img/             # Images and assets  
