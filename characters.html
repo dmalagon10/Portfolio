@@ -6,13 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/menu.css" rel="stylesheet">
-    <link href="../css/projectsInfo.css" rel="stylesheet">
     <link href="../css/about.css" rel="stylesheet">
-    <link href="../css/projectsMain.css" rel="stylesheet">
+    <link href="../css/projectsInfo.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <title>Characters</title>
+    <style>
+        /*table styles*/
+        .table-container {
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            width: 485px;
+            position: absolute;
+            top: 30%;
+            right: 33%;
+        }
+        .table-container table {
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        .table-container td, .table-container th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .table-container img {
+            max-width: 150px; 
+        }
+
+    </style>
 </head>
 <body>
     <!--Navbar-->
@@ -28,29 +54,21 @@
         </div>
     </div>
 
-    <!--Change project mode button-->
-    <div class="solo-link">
-        Go to<br>
-        <a href="groupProjects.html">
-            <img alt="" src="../img/icons/team.png">
-        </a>
-    </div>
-
     <!--Phones to access project-->
-    <div class="header" id="header" data-text="Select Project">select project</div>
-    <div class="options">
-        <a href="budget.html" class= "phone">
-            <div class="phoneTitle" style="font-size: 40px;">Budget <br>System</div>
-            <img alt="" src="../img/phones/budget.png">
-        </a>
-        <a href="lottery.html" class= "phone">
-            <div class="phoneTitle" style="font-size: 45px;">Lottery</div>
-            <img alt="" src="../img/phones/lottery.png">
-        </a>
-        <a href="moomoo.html" class= "phone">
-            <div class="phoneTitle" style="font-size: 40px;">MooMoo <br> Cream</div>
-            <img alt="" src="../img/phones/MooMoo.png">
-        </a>
+    <div class="header" id="header" data-text="Characters" style="position: absolute;top: 10%;left: 35%;">Characters</div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <td><img alt="" src="img/pantone/minji.jpeg"></td>
+                <td><img alt="" src="img/pantone/hyein.jpeg"></td>
+                <td><img alt="" src="img/pantone/hanni.jpeg"></td>
+            </tr>
+            <tr>
+                <td><img alt="" src="img/pantone/haerin.jpeg"></td>
+                <td><img alt="" src="img/pantone/danielle.jpeg"></td>
+                <td><img alt="" src="img/pantone/bunnie.jpeg"></td>
+            </tr>
+        </table>
     </div>
 
     <!--Title to prompt the user to select a project-->
