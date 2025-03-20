@@ -67,9 +67,16 @@
 .runner-container {
     position: absolute;
     bottom: 7%;
-    left: -1500px;
     width: 100vw;
     height: 100vh;
+}
+
+.runnerRight {
+    left: -1500px; 
+}
+
+.runnerLeft {
+    right: -1500px; 
 }
 
 .runner {

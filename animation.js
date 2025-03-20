@@ -17,3 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+function startTransition(event, direction, url) {
+    event.preventDefault();
+
+    let runner;
+    
+    if (direction === "right") {
+        runner = document.getElementById("runnerR");
+        runner.style.transform = "translateX(185vw)"; 
+    } else{
+        runner = document.getElementById("runnerL");
+        runner.style.transform = "translateX(-185vw)"; 
+    }
+
+    setTimeout(() => {
+        window.location.href = url; 
+    }, 1200);
+}

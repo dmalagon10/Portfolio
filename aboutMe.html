@@ -47,18 +47,27 @@
         <!--Go back-->
         <div class="inner-con">
             <img class="back" alt="" src="img/back.png" style="animation: jump 1s ease-in-out infinite;">
-            <a href="index.html" class="back button">
+            <a href="index.html" class="back button" onclick="startTransition(event, 'left', this.href)">
                 <span class="material-symbols-outlined">arrow_back</span>
             </a>
         </div>
         <!--Go forward-->
         <div class="inner-con">
             <img class="next" alt="" src="img/next.png" style="animation: jump 1s ease-in-out infinite;">
-            <a href="projectsMode.html" class="next button">
+            <a href="projectsMode.html" class="next button" onclick="startTransition(event, 'right', this.href)">
                 <span class="material-symbols-outlined">arrow_forward</span>
             </a>
         </div>
     </div>
+
+    <div class="runner-container runnerRight">
+        <img src="img/tranR.png" class="runner" id="runnerR" alt="">
+    </div>
+
+    <div class="runner-container runnerLeft">
+        <img src="img/tranL.png" class="runner" id="runnerL" alt="">
+    </div>
+
 
     <!--animation of title-->
     <script src="animation.js"></script>
