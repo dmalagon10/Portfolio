@@ -32,7 +32,7 @@
         <div class="parallelogram">
             <!--Pink side-->
             <div class="parallelogram1">
-                <a href="projects/groupProjects.html">
+                <a href="projects/groupProjects.html" onclick="startTransition(event, 'right', this.href)">
                     <img src="img/modes/photo.png" alt="" class="project" style="z-index: 2;">
                     <img src="img/modes/group.png" alt="" class="title project">
                 </a>
@@ -40,7 +40,7 @@
                 <div class="container">
                     <div class="inner-con">
                         <img class="back" alt="" src="img/back.png" style="animation: jump 1s ease-in-out infinite;">
-                        <a href="aboutMe.html" class="back button">
+                        <a href="aboutMe.html" class="back button" onclick="startTransition(event, 'left', this.href)">
                             <span class="material-symbols-outlined">arrow_back</span>
                         </a>
                     </div>
@@ -48,12 +48,22 @@
             </div>
             <!--Blue side-->
             <div class="parallelogram2">
-                <a href="projects/soloProjects.html">
+                <a href="projects/soloProjects.html" onclick="startTransition(event, 'right', this.href)">
                     <img src="img/modes/bunny.png" alt="" class="solo project">
                     <img src="img/modes/solo.png" alt="" class="title2 project">
                 </a>
             </div>
         </div>
     </div>
+
+    <div class="runner-container runnerRight" style="z-index: 4;">
+        <img src="img/tranR.png" class="runner" id="runnerR" alt="">
+    </div>
+
+    <div class="runner-container runnerLeft" style="z-index: 4;">
+        <img src="img/tranL.png" class="runner" id="runnerL" alt="">
+    </div>
+
+    <script src="animation.js"></script>
 </body>
 </html>
