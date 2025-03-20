@@ -10,7 +10,7 @@ body {
 /*font declaration*/
 @font-face {
     font-family: "MyFont";
-    src: url("/Portafolio/fonts/04B_30__.TTF") format("truetype");
+    src: url("../fonts/04B_30__.TTF") format("truetype");
 }
 /*title*/
 .header{
