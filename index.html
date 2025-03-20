@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/menu.css" rel="stylesheet">
     <link href="css/mainpage.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +32,12 @@
     <div class="title">
         <img class="name" alt="" src="img/mainImg/danielas.png">
         <img class="name" alt="" src="img/mainImg/Portfolio.png">
-        <a href="aboutMe.html" class="button">Get started</a>
+        <a href="aboutMe.html" class="button" onclick="startTransition(event, this.href)">Get started</a>
     </div>
+
+    <div class="runner-container">
+        <img src="get up.png" class="runner" id="runner" alt="Running Character">
+    </div>
+
 </body>
 </html>
