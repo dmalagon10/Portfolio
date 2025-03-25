@@ -5,12 +5,10 @@
 body{
     background-image: url("../img/soloBg.png");
     background-size: cover;
-    background-position: center center; 
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
-    margin: 0;
+    height: 95vh;
 }
-
 /*title styles*/
 .header{
     position: absolute;
@@ -29,9 +27,6 @@ body{
     gap: 100px;
 
 }
-/*.phone {
-    width: 300px; 
-}*/
 
 .phone img {
     max-width: 100%;  
