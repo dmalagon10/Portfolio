@@ -2,7 +2,7 @@
 Personal portfolio website showcasing projects, skills, and experience.
 
 ## Live Demo
-Link to the portfolio: https://dmalagon10.github.io/Portafolio/index.html
+Link to the portfolio: [https://dmalagon10.github.io/Portafolio/index.html](https://dmalagon10.github.io/Portfolio/)
 
 ## Description
 This is my personal portfolio where I showcase my projects, skills, and experience in web development. It includes:
