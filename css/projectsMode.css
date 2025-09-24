@@ -41,13 +41,16 @@ body{
 }
 .solo{
     top: 10%;
-    z-index: 2;
+}
+.group{
+    left: 200px;
 }
 
 /*title images*/
 .title{
     top: 50%;
     z-index: 2;
+    left: 200px;
 }
 .title2{
     top: 61%;
