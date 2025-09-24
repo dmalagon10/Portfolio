@@ -33,4 +33,4 @@ function startTransition(event, direction, url) {
     setTimeout(() => {
         window.location.href = url; 
     }, 1200);
-}
+} 
