@@ -12,8 +12,8 @@
     margin-right: 10px;
     position: absolute;
     background-repeat: no-repeat;
-    width: 70px;
-    height: 50px;
+    width: 120px;
+    height: 110px;
     animation: headShake 2s infinite ease-in-out;
     z-index: 3;
 }
@@ -41,16 +41,18 @@
     background-color: #6bb9e6;
     padding: 0px;
     position: absolute;
-    top: 50px;
-    width: 100px;
+    top: 85px;
+    left: 30px;
+    width: 150px;
     border-radius: 10px;
 }
 
 .menu a {
     color: black;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
     font-family: "Jersey 10", sans-serif;
+    font-size: 24px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     transform: scale(1.05);
     border-radius: 10px;
@@ -63,4 +65,29 @@
 
 .menu-container:hover .menu {
     display: flex;
+}
+
+.runner-container {
+    position: absolute;
+    bottom: 7%;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.runnerRight {
+    left: -1720px; 
+}
+
+.runnerLeft {
+    right: -1720px; 
+}
+
+.runner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    transition: transform 1s linear;
 }

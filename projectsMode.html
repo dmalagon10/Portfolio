@@ -17,14 +17,13 @@
 <body>
     <!--Navbar-->
     <div class="navbar">
-        <div class="menu-container">
+        <div class="menu-container" style="z-index: 4;">
             <button class="menu-button"></button>
-            <div class="menu" style="z-index: 2;">
+            <div class="menu">
                 <a href="index.html">Main Page</a>
                 <a href="aboutMe.html">About Me</a>
                 <a href="projectsMode.html">Projects</a>
                 <a href="credits.html">Credits</a>
-                <a href="characters.html">Characters</a>
             </div>
         </div>
     </div>
@@ -33,15 +32,15 @@
         <div class="parallelogram">
             <!--Pink side-->
             <div class="parallelogram1">
-                <a href="projects/groupProjects.html">
-                    <img src="img/modes/photo.png" alt="" class="project" style="z-index: 2;">
+                <a href="projects/groupProjects.html" onclick="startTransition(event, 'right', this.href)">
+                    <img src="img/modes/photo.png" alt="" class="group project" style="z-index: 1;">
                     <img src="img/modes/group.png" alt="" class="title project">
                 </a>
                 <!--back button-->
-                <div class="container" style="padding: 0px 45px;">
-                    <div class="inner-con">
+                <div class="container">
+                    <div class="inner-con" style=" margin-left: 70px;">
                         <img class="back" alt="" src="img/back.png" style="animation: jump 1s ease-in-out infinite;">
-                        <a href="aboutMe.html" class="back button">
+                        <a href="aboutMe.html" class="back button" onclick="startTransition(event, 'left', this.href)">
                             <span class="material-symbols-outlined">arrow_back</span>
                         </a>
                     </div>
@@ -49,12 +48,22 @@
             </div>
             <!--Blue side-->
             <div class="parallelogram2">
-                <a href="projects/soloProjects.html">
+                <a href="projects/soloProjects.html" onclick="startTransition(event, 'right', this.href)">
                     <img src="img/modes/bunny.png" alt="" class="solo project">
                     <img src="img/modes/solo.png" alt="" class="title2 project">
                 </a>
             </div>
         </div>
     </div>
+
+    <div class="runner-container runnerRight" style="z-index: 3;">
+        <img src="img/tranR.png" class="runner" id="runnerR" alt="">
+    </div>
+
+    <div class="runner-container runnerLeft" style="z-index: 3;">
+        <img src="img/tranL.png" class="runner" id="runnerL" alt="">
+    </div>
+
+    <script src="animation.js"></script>
 </body>
 </html>

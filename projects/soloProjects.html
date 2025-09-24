@@ -22,7 +22,6 @@
                 <a href="../aboutMe.html">About Me</a>
                 <a href="../projectsMode.html">Projects</a>
                 <a href="../credits.html">Credits</a>
-                <a href="../characters.html">Characters</a>
             </div>
         </div>
     </div>
@@ -38,20 +37,22 @@
     <!--Phones to access project-->
     <div class="header" id="header" data-text="Select Project">select project</div>
     <div class="options">
-        <a href="budget.html" class= "phone">
+        <a href="budget.html" class= "phone" onclick="startTransition(event, 'right', this.href)">
             <div class="phoneTitle" style="font-size: 40px;">Budget <br>System</div>
             <img alt="" src="../img/phones/budget.png">
         </a>
-        <a href="lottery.html" class= "phone">
+        <a href="lottery.html" class= "phone" onclick="startTransition(event, 'right', this.href)">
             <div class="phoneTitle" style="font-size: 45px;">Lottery</div>
             <img alt="" src="../img/phones/lottery.png">
         </a>
-        <a href="moomoo.html" class= "phone">
+        <a href="moomoo.html" class= "phone" onclick="startTransition(event, 'right', this.href)">
             <div class="phoneTitle" style="font-size: 40px;">MooMoo <br> Cream</div>
             <img alt="" src="../img/phones/MooMoo.png">
         </a>
     </div>
-
+    <div class="runner-container runnerRight">
+        <img src="../img/tranR.png" class="runner" id="runnerR" alt="">
+    </div>
     <!--Title to prompt the user to select a project-->
     <script src="../animation.js"></script>
 </body>
