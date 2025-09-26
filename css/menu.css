@@ -13,7 +13,7 @@
     position: absolute;
     background-repeat: no-repeat;
     width: 120px;
-    height: 110px;
+    height: 90px;
     animation: headShake 2s infinite ease-in-out;
     z-index: 3;
 }
