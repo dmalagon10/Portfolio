@@ -15,6 +15,7 @@ body, html {
 
 a{
   text-decoration: none;
+  font-size:35px;
   color: #000000;
 }
 
@@ -108,27 +109,26 @@ a{
 }
 
 .projects,.work{
-    font-family: "MyFont", sans-serif;
-    font-size:40px;
-    position: relative;
-    display: inline-block;
+  font-family: "MyFont", sans-serif;
+  position: relative;
+  display: inline-block;
 }
 
 .projects{
-    top: 355px;
-    left:845px
+  top: 355px;
+  left:845px
 }
 
 .work{
-    top: 850px;
-    right:200px;
+  top: 850px;
+  right:180px;
 }
 
+
 .glitch {
-    position: relative;
-    display: inline-block;
-    font-size: 40px;
-    font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
 }
 
 .glitch::before,
@@ -189,7 +189,7 @@ a{
     100% { opacity: 0; transform: translate(0); }
 }
 
-/* underline title */
+/*hover*/
 .underline {
   position: relative;
   display: inline-block;
