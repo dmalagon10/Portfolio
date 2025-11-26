@@ -1,13 +1,7 @@
-/*body {
-    background-image: url("../img/options.png");
-    background-color: black;
-    background-repeat: no-repeat; 
-    background-size: contain;     
-    background-position: center; 
-    height: 99vh;                           
-}*/
+body {
+    background-image: url("../img/options.png");                      
+}
 body, html {
-    background-image: url("../img/options.png");
     background-color: black;
     background-repeat: no-repeat; 
     background-size: contain;     
@@ -18,7 +12,7 @@ body, html {
     overflow: hidden;
 }
 
-/* Luz principal del sol */
+/*sun*/
 .sun {
   position: absolute;
   top: 50%;
@@ -37,7 +31,7 @@ body, html {
     sunpulse 4s ease-out forwards;
 }
 
-/* Capas de flare suave */
+/* flare */
 .flare {
   position: absolute;
   border-radius: 50%;
@@ -45,7 +39,7 @@ body, html {
   animation: sunmove 6s ease-out forwards;
 }
 
-/* Círculo más grande */
+/* big flare */
 .flare.big {
   width: 600px;
   height: 600px;
@@ -57,7 +51,7 @@ body, html {
   );
 }
 
-/* Halo suave */
+/* medium flare */
 .flare.medium {
   width: 350px;
   height: 350px;
@@ -69,7 +63,7 @@ body, html {
   );
 }
 
-/* Puntito brillante como reflejo de lente */
+/* small dot */
 .flare.small {
   width: 40px;
   height: 40px;
@@ -82,14 +76,14 @@ body, html {
   animation: sunsmallmove 5s ease-out forwards;
 }
 
-/* —— Animaciones —— */
+/* Animations */
 
 @keyframes sunmove {
   0% {
-    transform: translate(-300px, -300px); /* esquina superior izquierda */
+    transform: translate(-300px, -300px); /* left top corner */
   }
   100% {
-    transform: translate(300px, 300px); /* esquina inferior derecha */
+    transform: translate(300px, 300px); /* right bottom corner */
   }
 }
 
@@ -105,4 +99,84 @@ body, html {
 @keyframes sunpulse {
   0%   { filter: blur(10px) brightness(1); }
   100% { filter: blur(22px) brightness(1.35); }
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("../fonts/04B_30__.TTF") format("truetype");
+}
+.projects,.work{
+    font-family: "MyFont", sans-serif;
+    font-size:40px;
+    position: relative;
+}
+.projects{
+    top: 355px;
+    left:845px
+}
+.work{
+    top: 650px;
+    left:70px;
+    transform: rotate(-10deg);
+}
+
+.glitch {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/* Animación principal */
+.glitch {
+    animation: glitch 0.6s steps(2, end) 1 forwards;
+    animation-delay: 5s; /* espera 5 segundos */
+}
+
+/* Pseudo-elementos morados */
+.glitch::before {
+    color: #a855f7;
+    animation: glitchBefore 0.6s steps(2, end) 1 forwards;
+    animation-delay: 5s;
+}
+
+.glitch::after {
+    color: #d8b4fe;
+    animation: glitchAfter 0.6s steps(2, end) 1 forwards;
+    animation-delay: 5s;
+}
+
+/* Keyframes */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-3px, -3px); }
+    80% { transform: translate(3px, 3px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes glitchBefore {
+    0% { opacity: 1; transform: translate(-2px, -2px); }
+    20% { transform: translate(2px, 2px); }
+    40% { transform: translate(-2px, 2px); }
+    60% { transform: translate(2px, -2px); }
+    100% { opacity: 0; transform: translate(0); }
+}
+
+@keyframes glitchAfter {
+    0% { opacity: 1; transform: translate(2px, 2px); }
+    20% { transform: translate(-2px, -2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    100% { opacity: 0; transform: translate(0); }
 }

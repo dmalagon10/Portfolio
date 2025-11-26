@@ -12,6 +12,7 @@ body {
     font-family: "MyFont";
     src: url("../fonts/04B_30__.TTF") format("truetype");
 }
+
 /*title*/
 .header{
     font-family: "MyFont", sans-serif;
