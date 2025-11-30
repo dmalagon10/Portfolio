@@ -16,3 +16,18 @@ body {
         background-position: -286% 0;
     }
 }
+
+img {
+    width: 1000px;
+}
+
+.experience1{
+    position: relative;
+    transform: rotate(-15deg);
+}
+.experience2{
+    position: relative;
+    transform: rotate(20deg);
+    bottom: 200px;
+    left: 900px;
+}
