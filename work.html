@@ -3,15 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/projectsMain.css" rel="stylesheet">
+    <link href="../css/projectsInfo.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
     <link href="css/work.css" rel="stylesheet">
-    <title>Work experince</title>
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>Work experience</title>
 </head>
 <body>
+    <div class="navbar">
+        <div class="menu-container">
+            <button class="menu-button"></button>
+            <div class="menu">
+                <a href="index.html">Main Page</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="projectsMode.html">Projects</a>
+                <a href="work.html">Work experience</a>
+                <a href="credits.html">Credits</a>
+            </div>
+        </div>
+    </div>
+
     <div class="experience1">
         <img src="/img/work/experience1.png">
     </div>
     <div class="experience2">
         <img src="/img/work/experience2.png">
+    </div>
+
+    <div class="container" style="position: fixed; bottom: 24px;">
+        <div class="inner-con">
+            <img alt="" class="back" src="img/back.png" style="animation: jump 1s ease-in-out infinite;">
+            <a href="options.html" class="back button" onclick="startTransition(event, 'left', this.href)">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="runner-container runnerLeft">
+        <img src="img/tranL.png" class="runner" id="runnerL" alt="">
     </div>
 
     <script src="animation.js"></script>
