@@ -18,7 +18,7 @@ body {
 }
 
 img {
-    width: 1000px;
+    width: 700px;
 }
 
 .experience1{
@@ -28,6 +28,6 @@ img {
 .experience2{
     position: relative;
     transform: rotate(20deg);
-    bottom: 200px;
-    left: 900px;
+    bottom: 100px;
+    left: 700px;
 }
