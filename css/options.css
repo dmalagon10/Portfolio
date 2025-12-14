@@ -115,13 +115,14 @@ a{
 }
 
 .projects{
-  top: 355px;
-  left:845px
+  top: 255px;
+  left: 645px;
+  font-size: 25px;;
 }
 
 .work{
-  top: 850px;
-  right:180px;
+  top: 635px;
+  right:155px;
 }
 
 
