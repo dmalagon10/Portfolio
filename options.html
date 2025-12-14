@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/options.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <title>Choose an option</title>
 </head>
 <body>
-<body>
+    <div class="navbar">
+        <div class="menu-container">
+            <button class="menu-button"></button>
+            <div class="menu">
+                <a href="index.html">Main Page</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="projectsMode.html">Projects</a>
+                <a href="credits.html">Credits</a>
+            </div>
+        </div>
+    </div>
+
     <div class="sun"></div>
     <div class="flare big"></div>
     <div class="flare medium"></div>
     <div class="flare small"></div>
-    <a href="#" class="projects glitch underline" data-text="PROJECTS">
+
+    <a href="projectsMode.html" class="projects glitch underline" data-text="PROJECTS" onclick="startTransition(event, 'right', this.href)">
         PROJECTS <span class="u-line"></span>
     </a>
 
-    <a href="work.html" class="work glitch underline" data-text="WORK">
+    <a href="work.html" class="work glitch underline" data-text="WORK" onclick="startTransition(event, 'right', this.href)">
         WORK <span class="u-line"></span>
     </a>
-</body>
+
+    <div class="runner-container runnerRight">
+        <img src="img/tranR.png" class="runner" id="runnerR" alt="">
+    </div>
+
+    <script src="animation.js"></script>
 </body>
 </html>
